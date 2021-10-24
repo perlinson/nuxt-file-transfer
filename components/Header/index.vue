@@ -1,5 +1,5 @@
 <template>
-  <el-contaner >
+  <el-container>
     <el-menu
       :default-active="activeIndex"
       class="el-menu-demo"
@@ -11,17 +11,28 @@
           Home
         </nuxt-link>
       </el-menu-item>
+      <el-menu-item index="2">
+        <nuxt-link class="nav-link active" aria-current="page" to="/fileList">
+          业绩信息
+        </nuxt-link>
+      </el-menu-item>
       <el-menu-item index="3">
-        <nuxt-link
-          class="nav-link active"
-          aria-current="page"
-          to="/fileList"
-        >
+        <nuxt-link class="nav-link active" aria-current="page" to="/employee">
+          人员信息
+        </nuxt-link>
+      </el-menu-item>
+      <el-menu-item index="4">
+        <nuxt-link class="nav-link active" aria-current="page" to="/achive">
+          业绩信息
+        </nuxt-link>
+      </el-menu-item>
+      <el-menu-item index="5">
+        <nuxt-link class="nav-link active" aria-current="page" to="/fileList">
           File List
         </nuxt-link>
       </el-menu-item>
     </el-menu>
-  </el-contaner>
+  </el-container>
 </template>
 
 <script>

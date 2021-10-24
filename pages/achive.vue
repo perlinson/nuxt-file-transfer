@@ -1,16 +1,10 @@
 <template>
   <el-container direction="vertical">
     <el-row>
-      <h1>单张图片</h1>
-      <upload-image
-        v-model="image1"
-        :file-size="1"
-        :is-show-tip="false"
-        :lazy="true"
-        :response-fn="handleResponse"
-        action="http://localhost:8080/api/file/upload"
-        title="单张图片"
-      ></upload-image>
+      <el-col :span="2">人员列表</el-col>
+      <el-col :span="2">
+        <el-button>新增人员</el-button>
+      </el-col>
     </el-row>
     <el-table :data="tableData" title="FILE LSIT" style="width: 100%">
       <el-table-column prop="file_mimetype" label="类型" width="180">
